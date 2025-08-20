@@ -53,7 +53,7 @@ Bu üç yaklaşım birlikte kullanıldığında, yazılım projelerinin daha esn
 
 Komut:
 ```bash
-git clone https://tfs.jandarma.gov.tr/tfs/IBS_Yazilim_Surec_Yonetimi/JUGA%20Clean%20Architecture%20Solution%20Template/_git/JUGA%20Clean%20Architecture%20Solution%20Template
+git clone 
 
 ```
 
