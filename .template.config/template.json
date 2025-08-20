@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Nuri AKTAs",
+    "classifications": [
+        "Clean Architecture",
+        "ASP.NET Core",
+        "Web API",
+        "JUGA Project Template"
+    ],
+    "name": "JUGA Clean Architecture Template",
+    "shortName": "juga-clean",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "identity": "Clean Architecture Template",
+    "description": ".NET 8 JUGA Clean Architecture Template",
+    "sourceName": "CleanArchitecture",
+    "sources": [
+        {
+            "source": "./",
+            "target": "./",
+            "exclude": [
+                ".git/**",
+                ".gitignore",
+                ".template.config/**/*"
+            ]
+        }
+    ],
+	 "postActions": [
+    {
+      "actionId": "77E6C3E6-3A71-4BEB-9FF1-7B4A5A0D7AEB",
+      "description": "Configure your api in appsetting.sjon. ",
+      "manualInstructions": [
+        { "text": "ConnectionString,Keycloak(Security Settings),Logs, Audit Logs, Caching gibi özellikleri uyarlamayı unutmayın" },
+             ],
+      "continueOnError": true
+    },
+	{
+      "actionId": "77E6C3E6-3A71-4BEB-9FF1-7B4A5A0D7AEC",
+      "description": "Configure Domain. ",
+      "manualInstructions": [
+        { "text": "Veri tabanı nesnelerinizi örneğe uygun olarak Ef Core ile maplemeyi unutmayın." },
+             ],
+      "continueOnError": true
+    },
+	{
+      "actionId": "77E6C3E6-3A71-4BEB-9FF1-7B4A5A0D7AED",
+      "description": "Configure Infrastructure. ",
+      "manualInstructions": [
+        { "text": "Db Context ayarlamaarınızı örneğe uygun olarak düzenlemeyi unutmayın." },
+             ],
+      "continueOnError": true
+    },
+	{
+      "actionId": "77E6C3E6-3A71-4BEB-9FF1-7B4A5A0D7AED",
+      "description": "Secrets",
+      "manualInstructions": [
+        { "text": "Connection string, kullanıcı adı ve şifre verilerini korumayı ihmal etmeyin.." },
+             ],
+      "continueOnError": true
+    },
+  ]
+}
